@@ -3,7 +3,7 @@ function virusIndices(p, v) { // p equals to patient DNA and v equals to virus D
     const pLength = p.length // Length of patient DNA
     const vLength = v.length//length of Virus DNA
   
-    for (let i = 0; i <= pLength - vLength; i++) {   // Outer loop iterates through the patient DNA ensuring each substring is compared is same length as the virus DNA
+    for (let i = 0; i <= pLength - vLength; i++) {   // Outer loop iterates through the patient DNA ensuring each substring is compred is same length as the virus DNA
       let mismatchCount = 0 //  mismatch initialized
       for (let j = 0; j < vLength; j++) {
         if (p[i + j] !== v[j]) { //inner loop compare the current substring of the pation DNA with the virus DNA 
@@ -24,7 +24,7 @@ function virusIndices(p, v) { // p equals to patient DNA and v equals to virus D
   }
   
   // Test cases
-console.log(virusIndices("abbab", "ba"))
+console.log(virusIndices("abbab", "ba")) 
 console.log(virusIndices("hello", "world"))
 console.log(virusIndices("banana", "nan"))
 console.log(virusIndices("cgatcg", "gc"))
